@@ -1,0 +1,160 @@
+{
+  "position": "top",
+  "layer": "top",
+  "margin": "10 10 0 10",
+
+  "modules-left": [
+    /* "temperature", */
+    "custom/launcher",
+    "custom/weather",
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "memory",
+    "cpu",
+    "custom/powermenu",
+    "tray"
+    /* "backlight",
+    "network",
+    "battery", */
+  ],
+  "hyprland/workspaces": {
+    "active-only": false,
+    "all-outpus": true,
+    "disable-scroll": false,
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+       "1": "1",
+       "2": "2",
+       "3": "3",
+       "4": "4",
+       "5": "5",
+       "6": "6",
+       "7": "7",
+       "8": "8",
+       "9": "9",
+       "10": "10",
+      "focused": "",
+      "sort-by-number": true
+    }
+  },
+  "clock": {
+    "interval": 60,
+    "align": 0,
+    "rotate": 0,
+    "tootip": true,
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%a %b %d :%H:%M}",
+    "format-alt": " {:%a %b %d, %G}"
+  },
+  "cpu": {
+    "format": "\udb80\udf5b {usage}%",
+    "interval": 1
+  },
+  "custom/weather": {
+    "format": "{} °",
+    "tootip": true,
+    "interval": 3600,
+    "exec": "wttrbar --location Changsha",
+    "return-type": "json"
+  },
+  "custom/launcher": {
+      /* distro specific nerdfont for arch */
+      "format": "\uf303 ", 
+      "on-click": "$HOME/scripts/menu",
+      "tooltip": false
+  },
+  "custom/powermenu": {
+    "format": "\uf011",
+    "on-click": "$HOME/scripts/logout",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "\udb83\udee0 {percentage}%",
+    "interval": 1,
+    "states": {
+      "warning": 85
+    }
+  },
+  "pulseaudio": {
+        //"format": "{volume}% {icon} {format_source}",
+        "format": "{icon} {volume}%",
+        "format-muted": " Mute",
+        "format-bluetooth": " {volume}% {format_source}",
+        "format-bluetooth-muted": " Mute",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+          "headphone": "",
+          "hands-free": "",
+          "headset": "",
+          "phone": "",
+          "portable": "",
+          "car": "",
+          "default": [
+            "",
+            "",
+            ""
+          ]
+        },
+        "scroll-step": 5.0,
+        // Commands to execute on events
+        "on-click": "amixer set Master toggle",
+        "on-click-right": "pavucontrol",
+        "smooth-scrolling-threshold": 1
+  },
+  "tray": {
+    "icon-size": 15,
+    "spacing": 10
+  }
+    /* "network": {
+        "interval": 5,
+        //"interface": "wlan*", // (Optional) To force the use of this interface, set it for netspeed to work
+        "format-wifi": " {essid}",
+        "format-ethernet": " {ipaddr}/{cidr}",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "睊 Disconnected",
+        "format-disabled": "睊 Disabled",
+        "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
+        "tooltip-format": " {ifname} via {gwaddr}"
+    },
+    "backlight" : {
+        "device" : "intel_backlight",
+        "on-scroll-up" : "light -A 5",
+        "on-scroll-down" : "light -U 5",
+        "format" : "{icon} {percent}%",
+        "format-icons" : [ "󰃝", "󰃞", "󰃟", "󰃠" ]
+    },
+    "battery" : {
+        "interval" : 10,
+        "states" : {
+            "warning" : 20,
+            "critical" : 10
+        },
+        "format" : "{icon} {capacity}%",
+        "format-icons" : [ "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
+        "format-full" : "{icon} {capacity}%",
+        "format-charging" : "󰂄 {capacity}%",
+        "tooltip" : false
+    },
+    "temperature": {
+        "format": "\uf2c9 {temperatureC}\u00b0C",
+        "tooltip": false
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "\uf06e",
+        "deactivated": "\uf070"
+      },
+      "tooltip": false
+    },
+    */
+}

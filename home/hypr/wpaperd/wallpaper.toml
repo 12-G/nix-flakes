@@ -1,0 +1,11 @@
+[default]
+path = "/home/ethan/Pictures/wallpapers"
+duration = "10m"
+
+# [eDP-1]
+# path = "/home/ethan/Pictures/wallpapers"
+# duration = "10m"
+# 
+# [DP-2]
+# path = "/home/ethan/Pictures/wallpapers"
+# duration = "10m"

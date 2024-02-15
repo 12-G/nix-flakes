@@ -1,0 +1,192 @@
+/* --- gereral --- */
+* {
+  border: none;
+  border-radius: 5px;
+  font-family: "FiraCode Nerd Font";
+  font-size: 12pt;
+  font-weight: 600;
+  min-height: 0
+}
+
+window#waybar {
+  background: transparent; /* make three modules seperate */
+  /* color: #cdd6f4; */
+}
+
+/* --- left module --- */
+#workspaces {
+  padding-left: 2px;
+  padding-right: 12px;
+  border-radius: 0px 10px 10px 0px;
+  transition: none;
+  background: #1e1e2e;
+}
+
+#workspaces button {
+  transition: none;
+  color: #7f849c;
+  background: transparent;
+  padding: 5px;
+}
+
+#workspaces button.active {
+  color: #89b4fa;
+  border-radius: 5px;
+}
+
+#workspaces button:hover {
+  background: #11111b;
+  color: #cdd6f4;
+  border-radius: 5px;
+}
+
+#custom-launcher {
+  border-radius: 10px 0px 0px 10px;
+  padding-left: 20px;
+  padding-right: 8px;
+  color: #7ebae4;
+  background: #1e1e2e;
+}
+
+#custom-weather {
+  background: #1e1e2e;
+  color: #f38ba8;
+  border-radius: 0px 0px 0px 0px;
+  padding-left: 8px;
+  padding-right: 2px;
+}
+
+/* --- center module --- */
+#clock {
+  border-radius: 10px 10px 10px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #1e1e2e;
+  color: rgb(217, 224, 238);
+}
+
+/* --- right module --- */
+#pulseaudio {
+  border-radius: 10px 0px 0px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #1e1e2e;
+  color: rgb(245, 224, 220);
+}
+
+#memory {
+  background: #1e1e2e;
+  border-radius: 0px 0px 0px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(181, 232, 224);
+}
+
+#cpu {
+  background: #1e1e2e;
+  border-radius: 0px 0px 0px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(245, 194, 231);
+}
+
+#custom-powermenu {
+  border-radius: 0px 0px 0px 0px;
+  background: #1e1e2e;
+  color: rgb(242, 143, 173);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#tray {
+  background: #1e1e2e;
+  border-radius: 0px 10px 10px 0px;
+  padding-right: 12px;
+  padding-left: 10px;
+}
+/* 
+#temperature, 
+#backlight,
+#battery,
+#network,
+*/
+
+/*
+.warning,
+.critical,
+.urgent {
+    animation-name: blink_red;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#mode { 
+  margin-left: 10px; 
+  background-color: rgb(248, 189, 150); 
+  color: rgb(26, 24, 38); 
+} 
+
+#idle_inhibitor {
+  color: rgb(221, 182, 242);
+}
+
+
+#custom-wall {
+  color: #33ccff;
+}
+
+#custom-weather.severe {
+    color: #eb937d;
+}
+
+#custom-weather.sunnyDay {
+    color: #c2ca76;
+}
+
+#custom-weather.clearNight {
+    color: #c6d0f5;
+}
+
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+    color: #c2ddda;
+}
+
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+    color: #5aaca5;
+}
+
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+    color: #d6e7e5;
+}
+
+#custom-weather.default {
+    color: #dbd9d8;
+}
+
+#network {
+    color: #abe9b3;
+}
+
+#network.disconnected {
+    color: rgb(255, 255, 255);
+}
+
+#battery.charging, #battery.full, #battery.discharging {
+    color: rgb(250, 227, 176);
+}
+
+#battery.critical:not(.charging) {
+    color: rgb(242, 143, 173);
+}
+
+#temperature {
+    color: rgb(150, 205, 251);
+}
+
+#backlight {
+    color: rgb(248, 189, 150);
+}
+*/

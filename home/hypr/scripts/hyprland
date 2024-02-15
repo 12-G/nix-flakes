@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+sleep 1
+killall -e xdg-desktop-portal-hyprland
+killall xdg-desktop-portal
+/nix/store/$(ls -ls /nix/store | grep 'xdg-desktop-portal-hyprland' | awk '{print $9}' | sed -n '$p')/libexec/xdg-desktop-portal-hyprland &
+sleep 2
+/nix/store/$(ls -ls /nix/store | grep 'xdg-desktop-portal' | awk '{print $9}' | sed -n '$p')/libexec/xdg-desktop-portal &
+sleep 2
+/nix/store/$(ls -la /nix/store | grep 'mate-polkit' | grep '4096' | awk '{print $9}' | sed -n '$p')/libexec/polkit-mate-authentication-agent-1 &

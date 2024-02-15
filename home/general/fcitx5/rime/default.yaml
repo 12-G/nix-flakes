@@ -1,0 +1,10 @@
+patch:
+  "menu/page_size": 5
+  "switches/@0/reset": 1
+  schema_list:
+    - schema: rime_ice
+
+key_binder:
+  bindings:
+    - { when: paging, accept: comma, send: Page_Up }
+    - { when: paging, accept: period, send: Page_Down }
