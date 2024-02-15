@@ -32,12 +32,12 @@
   };
 
   # For Nvidia GPU
-  hardware.nvidia = {
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
-    modesetting.enable = true;
-    open = false;
-    powerManagement.enable = true;
-  };
+  # hardware.nvidia = {
+  #  package = config.boot.kernelPackages.nvidiaPackages.stable;
+  #  modesetting.enable = true;
+  #  open = false;
+  #  powerManagement.enable = true;
+  # };
 
   hardware.opengl = {
     enable = true;
@@ -110,9 +110,9 @@
 
     # Nvidia
     # Hardware acceleration on NVIDIA GPUs
-    LIBVA_DRIVER_NAME = "nvidia";
-    GBM_BACKEND = "nvidia-drm";
-    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+    #LIBVA_DRIVER_NAME = "nvidia";
+    #GBM_BACKEND = "nvidia-drm";
+    #__GLX_VENDOR_LIBRARY_NAME = "nvidia";
 
     # Toolkit Backend Variables
     CLUTTER_BACKEND = "wayland";
